@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrape</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Bootstrape  is Started</h1>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <select class="form-select" name="course">
+  <option value="">Select a course</option>
+  <option>B.Sc IT</option>
+  <option>BCA</option>
+  <option>B.Tech Information Technology</option>
+  <option>Data Science</option>
+  <option>Web Development</option>
+  <option>Cybersecurity</option>
+  <option>Cloud Computing</option>
+  <option>Software Engineering</option>
+  <option>UI/UX Design</option>
+  <option>Machine Learning</option>
+</select>
+
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <title>IT Admission Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">IT Admission Form</h2>
+
+  <form>
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th scope="row">Full Name</th>
+          <td><input type="text" class="form-control" name="fullName" required></td>
+        </tr>
+        <tr>
+          <th scope="row">Email</th>
+          <td><input type="email" class="form-control" name="email" required></td>
+        </tr>
+        <tr>
+          <th scope="row">Phone Number</th>
+          <td><input type="tel" class="form-control" name="phone" required></td>
+        </tr>
+        <tr>
+          <th scope="row">Date of Birth</th>
+          <td><input type="date" class="form-control" name="dob" required></td>
+        </tr>
+        <tr>
+          <th scope="row">Gender</th>
+          <td>
+            <select class="form-select" name="gender">
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">IT Course</th>
+          <td>
+            <select class="form-select" name="course">
+              <option value="">Select a course</option>
+              <option>Computer Science</option>
+              <option>Information Technology</option>
+              <option>Software Engineering</option>
+              <option>Data Science</option>
+              <option>Cyber Security</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Address</th>
+          <td><textarea class="form-control" name="address" rows="3" required></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-end">
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </div>
+  </form>
+</div>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container mt-5">
+  <h2 class="mb-4 text-center">IT Admission Confirmation Form</h2>
+
+  <form>
+    <div class="mb-3">
+      <label for="studentName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="studentName" name="studentName" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="admissionId" class="form-label">Admission ID</label>
+      <input type="text" class="form-control" id="admissionId" name="admissionId" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="courseName" class="form-label">Confirmed Course</label>
+      <select class="form-select" id="courseName" name="courseName" required>
+        <option value="">Select Course</option>
+        <option>B.Sc IT</option>
+        <option>BCA</option>
+        <option>Software Engineering</option>
+        <option>Data Science</option>
+        <option>Cybersecurity</option>
+        <option>Cloud Computing</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="confirmDate" class="form-label">Confirmation Date</label>
+      <input type="date" class="form-control" id="confirmDate" name="confirmDate" required>
+    </div>
+
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="confirmCheck" required>
+      <label class="form-check-label" for="confirmCheck">
+        I confirm my admission to the selected IT course.
+      </label>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Confirm Admission</button>
+    </div>
+  </form>
+</div>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Accordion Item #4
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container text-center mt-5">
+  <div class="alert alert-success" role="alert">
+    <h2 class="mb-3">🎉 Admission Confirmed!</h2>
+    <p>Thank you for confirming your admission to the IT course.</p>
+    <p>We look forward to seeing you soon. Check your email for further details.</p>
+    <a href="index.html" class="btn btn-primary mt-3">Go Back to Home</a>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colum">
+            <div class="row" style="width: 100%; gap: 90px; padding: 20px;">
+                <div class="card" style="width: 18rem; padding: 15px; margin-top: 20px;">
+        <img src="https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+
+        <div class="card" style="width: 18rem; padding: 15px; margin-top: 20px;">
+        <img src="https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        <div class="card" style="width: 18rem; padding: 15px; margin-top: 20px;">
+        <img src="https://images.pexels.com/photos/10209036/pexels-photo-10209036.jpeg" class="card-img-top" alt="" style="height: 170px;">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
