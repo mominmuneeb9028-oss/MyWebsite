@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Form</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        width: 320px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+        border-color: #4CAF50;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    }
+
+    input[type="button"] {
+        width: 100%;
+        padding: 10px;
+        background: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s ease;
+    }
+
+    input[type="button"]:hover {
+        background: #45a049;
+    }
+
+    #result {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f0f9f1;
+        border: 1px solid #c8e6c9;
+        border-radius: 6px;
+        color: #333;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 10px 0;
+    }
+</style>
+
+</head>
+<body>
+    <form onsubmit="return false;">
+        <input type="text" id="name" placeholder="Student Name"><br><br>
+        <input type="number" id="number" placeholder="Roll Number"><br><br>
+        <input type="text" id="class" placeholder="Class"><br><br>
+        <input type="number" id="english" placeholder="English Marks"><br><br>
+        <input type="number" id="maths" placeholder="Maths Marks"><br><br>
+        <input type="number" id="physics" placeholder="Physics Marks"><br><br>
+
+        <input type="button" value="Calculate Result" 
+            onclick="calculateResult()">
+
+        <div id="result" style="margin-top:20px; font-weight:bold;"></div>
+    </form>
+
+    <script>
+        function calculateResult() {
+            let name = document.getElementById("name").value;
+            let rollNo = document.getElementById("number").value;
+            let className = document.getElementById("class").value;
+            let english = parseFloat(document.getElementById("english").value) || 0;
+            let maths = parseFloat(document.getElementById("maths").value) || 0;
+            let physics = parseFloat(document.getElementById("physics").value) || 0;
+
+            let total = english + maths + physics;
+            let percentage = (total / 300) * 100;
+
+            let grade = "";
+            if (percentage >= 90) grade = "A+";
+            else if (percentage >= 80) grade = "A";
+            else if (percentage >= 70) grade = "B";
+            else if (percentage >= 60) grade = "C";
+            else if (percentage >= 50) grade = "D";
+            else grade = "F";
+
+            document.getElementById("result").innerHTML = `
+                Name: ${name} <br>
+                Roll No: ${rollNo} <br>
+                Class: ${className} <br>
+                English: ${english} <br>
+                Maths: ${maths} <br>
+                Physics: ${physics} <br>
+                <hr>
+                Total Marks: ${total} / 300 <br>
+                Percentage: ${percentage.toFixed(2)}% <br>
+                Grade: ${grade}
+            `;
+
+            document.getElementById("name").value = "";
+            document.getElementById("number").value = "";
+            document.getElementById("class").value = "";
+            document.getElementById("english").value = "";
+            document.getElementById("maths").value = "";
+            document.getElementById("physics").value = "";
+        }
+    </script>
+</body>
+</html>
